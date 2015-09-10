@@ -1,0 +1,153 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+
+img:hover {
+    opacity: .2;
+}​
+
+header {	
+	padding: none;
+	margin: none;
+}
+
+/* Parent to child: navigation -> unsorted list */
+nav ul {
+	/*nav ul is the whole nav bar*/
+	padding: 0px 10px 0px 10px;
+	display: inline-block;
+	background: linear-gradient(#2E2C2C, #3E3B3B);
+	width: 100%;
+}
+
+/* Parent to child: navigation -> unsorted list -> list element */
+nav ul li {
+	font-size: 130%;
+	background: linear-gradient(#2E2C2C, #3E3B3B);
+	color: white;
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px 60px;
+	margin: 0px;
+}
+
+.ABOUTBACKGROUND	{
+	background-image: url("Sunflowers.jpg");
+	background-size: 100%;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
+
+.aboutblock {
+	margin-top: 80px;
+	background: linear-gradient(#3E3B3B, #2E2C2C);
+	width: 70%;
+    opacity: .8;
+    position: float;
+    margin-left: 235px;
+}
+
+.Abouttitle {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 330%;
+	font-weight: 300;
+	border-bottom: 2px solid white;
+	margin-bottom: 20px;
+	margin-right: 26px;
+	margin-left: 26px;
+	margin-top: 20px;
+	text-align: right;
+	padding: 10px;
+}
+
+.smalltitle  {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	font-size: 250%;
+	font-weight: 300;
+	text-align: left;
+	margin-left: 24px;
+}
+
+.AboutContain {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: -10px;
+	padding-right: -10px;
+	opacity: 1;
+    transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+}
+
+.AboutContain:hover {
+	background: #171616;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: -10px;
+	padding-right: -10px;
+	opacity: 2;
+}
+
+.smallwords {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 140%;
+	margin-left: 16px;
+	margin-right: 16px;
+	padding: 10px;
+}
+
+.tinywords {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	color: white;
+	font-size: 100%;
+	margin-top: 20px;
+}
+
+.maintitle {
+	list-style-type: none;
+	padding: 0px 80px;
+	margin: 0px;
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+.current {
+	background: #BF5700;
+	list-style-type: none;
+	padding: 0px 60px;
+	margin: 0px;
+	opacity: 1.8;
+}
+
+.button {
+  text-decoration: none  !important;
+  color: white;
+  webkit-transition: .2s;
+  transition: .2s;
+}
+
+.button.active {
+  text-decoration: none  !important;
+  color: #BF5700;
+  webkit-transition: .2s;
+  transition: .2s;
+}
+
+.button:hover {
+	opacity: .7;
+	background: #BF5700;
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px 60px;
+	margin: 0px;
+}
