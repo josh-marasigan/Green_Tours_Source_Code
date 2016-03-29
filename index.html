@@ -1,0 +1,170 @@
+<!doctype html>
+
+<head>
+	<!-- Scale by ViewPort, NOT browser -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Page Title and Information -->
+	<title>Texas Green Tours: Home</title>
+	
+	<!-- API link for Google fonts used in this page -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	
+	<!-- Add JQuery to project -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	 
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="icon" href="images/favicon.ico.png" type="image/x-icon" />
+	<!-- TGT Facebook, Office of Sustainability (Twitter @utaustingreen, Insta) -->
+	<!-- About: Write down the names of the people within the team -->
+	
+	<!-- Typed.js for dynamic text -->
+	<script src="js/activity.js"></script>
+	<script>
+	  $(function(){
+	      $(".element").typed({
+	        strings: ["CLEAN ENERGY. ^2000",
+	                  "SUSTAINABILITY. ^2000",
+	                  "TEXAS GREEN TOURS. ^2000"],
+	        typeSpeed: 0
+	      });
+	  });
+	</script>
+</head>
+
+<body>
+	<div class = 'body1'>
+		<h1><!-- Message Block 1 -->
+			<div id="message_1">
+				<span class='title_span'> LEARN MORE ABOUT 
+					<br class='hiddenClass'>
+					<span style='color: rgba(0,152,136,1);' class='element'></span>
+				</span>
+				<br>
+
+				<!-- Provide breaks only on mobile -->
+				<br class='hiddenClass'>
+				<br class='hiddenClass'>
+
+				<a id='message1' class='button' style='text-decoration: none;'>
+				<span>SO WHAT'S A GREEN TOUR?</span>
+				</a>
+			</div>
+		</h1>
+	</div>
+	<!-- Main Body -->
+	<div id='paragraph1'>
+
+		<!-- Navigation -->
+		<div id='wrap'>
+
+			<!-- Change this when 'Maps' tab is done -->
+			<ul class='res_nav'>
+				<li><a href='file:index.html'>Home</a></li>
+				<li><a href='file:about.html'>About</a></li>
+				<li><a href='#media'>Media</a></li>
+				<li><a href='#signups'>Sign-Ups</a></li>
+
+				<!-- Opens alternate navigation on smaller/mobile screens. See the JS -->
+				<li class="icon"><a href="javascript:void(0);" onclick="showNav()">&#9776;</a></li>
+			</ul>
+		</div>
+
+		<!-- Video Divider -->
+		<div class='video'>
+			
+			<!-- Request to YouTtube Server. Best to host with AWS but Vimeo could work also -->
+			<div class="videoWrapper">
+				<!-- Video Desc. -->
+				<span class='vidTitle'>
+					Explore UT Austin and <span style='color:white'>Sustainability<span>
+				</span><br><br>
+				
+				<iframe
+					width="854"
+					height="480" 
+					src="https://www.youtube.com/embed/Q2mrnM_DKyg"
+					frameborder="0"
+					allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+
+		<!-- Pictures -->
+		<div class='photobooth'>
+			
+			<!-- Grid Desc. -->
+			<br><br>
+			<span class='vidTitle'>
+				Image Gallery
+			</span>
+			<!-- Image Grid for Photos -->
+			<div id='imgWrap'>
+				<!-- Images filled in tile grid -->
+				<!-- Images hosted remotely to improve stie load time! -->
+		    	<img src="http://l1.picsurge.com/NHZIgB/mxuoHZSHKd.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/HwOYOltbaD.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/YrYtGsw7f2.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/zLL9JlSje4.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/Wz4Bn1bnSG.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/k6wK21C1RC.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/HKypn00ESE.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/o8iaNCfNiE.jpg"/>
+		    	<img src="http://l1.picsurge.com/NHZIgB/vCx7I2n1ik.jpg"/>
+			</div>
+
+		</div>
+
+		<!-- Testimonials -->
+		<div class='testimonials'>
+			<div class='testContain'>
+				
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<div class='tail'>
+			<!-- Social Media Links -->
+			<div id='social_media'>
+				
+				<div id='medialinks'>
+
+					<span class='rightFoot'>
+						<span class='vertAlign hiddenClass'>Stay Connected</span>
+						<br class='hiddenClass'>
+						<br class='hiddenClass'>
+
+						<span class='iconImages' style='padding: 0;'>
+							<!-- Social Media -->
+							<a href="https://www.facebook.com/sUsTainabilityToursAtUT/?fref=ts">
+							<img src="images/FB_Icon.png" width="42" height="42" border="0"></a>
+
+							<a href="https://twitter.com/UTAustinGreen">
+							<img src="images/TWT_Icon.png" width="42" height="42" border="0"></a>
+
+							<a href="https://www.instagram.com/utaustingreen/">
+							<img src="images/INS_Icon.png" width="42" height="42" border="0"></a>
+						</span>
+						<br class='desktopClass'>
+						<br class='desktopClass'>
+						<span class='vertAlign desktopClass'>Stay Connected</span>
+					</span>
+
+					<!-- Copyright -->
+					<br class='hiddenClass'>
+					<br class='hiddenClass'>					
+					<span class='leftFoot'>
+						<div style='vertical-align: bottom;'>
+							&#169; Copyright 2016 Texas Green Tours
+							<br>
+							All Rights Reserved
+						</div>
+					</span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>

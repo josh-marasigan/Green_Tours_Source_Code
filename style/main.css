@@ -1,0 +1,454 @@
+body {
+  margin:0px;
+  outline:none;
+  vertical-align: top;
+  font-family: Quicksand, Open Sans, Helvetica, sans-serif;
+}
+
+a {
+  padding: 1vw;
+}
+
+/* ---------- */
+/* Navigation */
+/* ---------- */
+ul.res_nav {
+    font-size: 1.5vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 3vw;
+    overflow: hidden;
+    background-color: rgba(0,152,136,1);
+}
+
+/* Float side by side */
+ul.res_nav li {float: left;
+}
+
+/* Style links */
+ul.res_nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Change background color of links on hover */
+ul.res_nav li a:hover {background-color: rgba(0,0,0,.2);}
+
+/* Hide the list item that contains the link that should open and close the res_nav on small screens */
+ul.res_nav li.icon {display: none;}
+
+/* --------------------------------------------------- */
+/* Media Queries for mobile and desktop responsiveness */
+/* --------------------------------------------------- */
+@media only screen and (max-width:999px) {
+  a#message1.button {
+     font-size: 5vw;
+  }
+  #message_1 br.hiddenClass {
+    display: block;
+  }
+  #message_1 span.title_span {
+    font-size: 7vw;
+  }
+  
+  #medialinks br.hiddenClass {
+    display: block;
+  }
+  #medialinks br.desktopClass {
+    display: none;
+  }
+  #medialinks span.hiddenClass {
+    display: inline-block;
+  }
+  #medialinks span.desktopClass {
+    display: none;
+  }
+  
+  div.tail div#medialinks {
+    padding-top: 6vw;
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  /* Selects first 3 elements/aka the icons */
+  #medialinks > br.hiddenClass {
+    display: block;
+  }
+
+  #medialinks > span.leftFoot {
+    font-size: 3vw;
+  }
+
+   #medialinks > span.rightFoot {
+    float: none;
+    text-align: center;
+   }
+
+  #medialinks > span.rightFoot > span.iconImages > a:nth-child(-n+3) > img {
+    float: none;
+    width: 20%;
+    height: 20%;
+  }
+  
+  #paragraph1 > div.video > div > span.vidTitle {
+    font-size: 7vw;
+  }
+
+  ul.res_nav li:not(:first-child) {
+    display: none;
+  }
+  ul.res_nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  a.button {
+    font-size: 5vw;
+  }
+  ul.res_nav {
+    font-size: 5vw;
+  }
+}
+
+/* -------------------------------------- */
+/* Classes that only exist in mobile view */
+/* -------------------------------------- */
+@media only screen and (max-width:999px) {
+  ul.res_nav.responsive {
+    font-size: 5vw;
+    position: relative;
+  }
+
+  ul.res_nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.res_nav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  ul.res_nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Show following classes only in mobile. */
+.hiddenClass {
+  display: none;
+}
+
+/* Remove Pipe Spacing */
+h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  margin: auto;
+  max-width:100%;
+  max-height:100%;
+  padding:0;
+}
+
+/* ------------- */
+/* Body and Tail */
+/* ------------- */
+.body1 {
+  font-family: Quicksand, Open Sans, Helvetica, sans-serif;
+  color: white;
+  font-size: 2vw;
+  
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 1, 1) ), url("../images/BG_A.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  text-align: center;
+  font-weight: 200;
+}
+
+.tail {
+   font-family: Quicksand, Open Sans, Helvetica, sans-serif;
+   color: rgba(0,152,136,.7);
+   font-size: 2vw;
+
+  background: url("../images/BG_Tail.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+   text-align: center;
+   font-weight: 200;
+}
+
+/* ---------- */
+/* Navigation */
+/* ---------- */
+
+/* Text decoration. Paragraphs */
+#message_1{
+	font-family: Quicksand, Open Sans, Helvetica, sans-serif;
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  vertical-align: top;
+  max-width:100%;
+  height:100vh;
+  padding-top:40vh;
+  font-weight: lighter;
+}
+
+/* Divisor for Media Links. Gives full page for other elements as well. */
+#social_media{
+  max-width:100%;
+  height:100vh;
+  padding-top:45vh;
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+
+  /* text decor */
+  color: white;
+  font-size: 1.75vw;
+}
+
+.leftFoot {
+  float: left;
+  text-align: left;
+  font-size: 1.2vw;
+}
+
+.rightFoot {
+  float: right;
+  text-align: right;
+}
+
+/* Contains Actual Links */
+#medialinks {
+  vertical-align: middle;
+
+  /* Div opacity BG */
+  background:rgba(0,0,0,.7);
+
+  /* Absolute position is bottom */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* Align middle and pad bottom */
+  padding: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#medialinks img {
+  filter: grayscale(60%);
+  -webkit-filter: grayscale(60%);
+  -moz-filter: grayscale(60%);
+  -ms-filter: grayscale(60%);
+  -o-filter: grayscale(60%);
+}
+
+#paragraph1{
+  color: rgba(0,152,136,.7);
+  font-family: Quicksand, Open Sans, Helvetica, sans-serif;
+  font-weight: thin;
+}
+
+#paragraph1 .tail img {
+  float:right;
+  padding-left: .5vw;
+}
+
+#message1{
+  font-size: 1.5vw;
+	font-family: Quicksand, Open Sans, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,152,136,.7);
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s
+}
+
+.button{
+  padding: .5vh 2vh;
+}
+
+.button:hover{
+	cursor: pointer;
+	cursor: hand;
+	padding: .5vh 3vh;
+  opacity: .7;
+}
+
+.element{
+	color: rgb(171,6,68);
+}
+
+.vertAlign {
+  vertical-align:super;
+}
+
+/* Courtesy of Typed.js */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Nav Sticky */
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+}
+
+/* Video wrapper */
+.video {
+  /* Split background */
+  background: linear-gradient(
+  to bottom, 
+  #076F64 0%, 
+  #076F64 60%, 
+  #FFFFFF 40%, 
+  #FFFFFF 100%);
+
+  /* Center */
+  position: relative;
+  width: auto;
+
+  /* Fill Browser */
+  min-height: 100vh;
+
+  /* Title text color */
+  color: #CC7700;
+  padding-top: 2.5vw;
+
+  text-align: center;
+}
+
+.photobooth {
+  min-height: 100vh;
+}
+
+.vidTitle {
+  font-size: 2.5vw;
+  font-weight: 200;
+  text-align: left;
+  padding-left: 1vw;
+}
+
+/* Content class for videoWrapper */
+.videoWrapper iframe {
+
+  /* Don't fill whole page */
+  max-height: 50%;
+  max-width: 50%;
+  
+  /* Center Video */
+  margin: 0 auto;
+  display:block;
+}
+
+/* ------------------------------------- */
+/* Photo Gallery Style and Media Queries */
+/* ------------------------------------- */
+#imgWrap { 
+  padding-top: 2vw;
+
+  line-height: 0;   
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px; 
+}
+
+#imgWrap img {
+  width: 100% !important;
+  height: auto !important;
+
+  /* Initial greyscale. Emphasize hover */
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+#imgWrap img:hover {
+  cursor: pointer;
+  cursor: hand;
+
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+
+  /* Hover OFF */
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s
+}
+
+/* Media Queries for mobile support for image */
+@media (max-width: 1200px) {
+  #imgWrap {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #imgWrap {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #imgWrap {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #imgWrap {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
