@@ -1,0 +1,236 @@
+<!doctype html>
+<head>
+	<!-- Page Title and Information -->
+	<title>Texas Green Tours: Home</title>
+	
+	<!-- API link for Google fonts used in this page -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="images/favicon.ico.png" type="image/x-icon" />
+
+	<!-- Add JQuery to project -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="style/main.css">
+	
+	<!-- TGT Facebook, Office of Sustainability (Twitter @utaustingreen, Insta) -->
+	<!-- About: Write down the names of the people within the team -->
+	
+	<!-- Typed.js for dynamic text -->
+	<script src="js/activity.js"></script>
+	<script>
+	  $(function(){
+	      $(".element").typed({
+	        strings: ["CLEAN ENERGY. ^2000",
+	                  "SUSTAINABILITY. ^2000",
+	                  "TEXAS GREEN TOURS. ^2000"],
+	        typeSpeed: 0
+	      });
+	  });
+	</script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<ul class='res_nav'>
+			<li><a href='file:index.html'>Home</a></li>
+			<li><a href='file:about.html'>About</a></li>
+			<li><a href='#media'>Media</a></li>
+			<li><a href='file:signups.html'>Sign-Ups</a></li>
+			<!-- Opens a navigation icon on smaller/mobile screens using JS -->
+			<li class="icon"><a href="javascript:void(0);" onclick="showNav()">&#9776;</a></li>
+	</ul>
+	<br><br><br><br>
+	<!-- Tour Descriptions -->
+		<div class = "Tours" style="background-color:rgba(0,152,130,.88); text-align: center; padding: 2vw;">
+		<h2 style="font-size:3vw; font-weight: 400; color:white;">Tour Descriptions</h2>
+		   <div class="k12" style="display:block; border:3px; border-style:solid; border-color:rgba(0,152,136,.6); padding: 1em; background-color:white;
+		   height:30vh; width:70vw; margin:0 auto">
+			<p> 
+				<h2 style="font-size:15px; color:rgba(0,152,136,1);">K - 12 Tour</h2>
+			This tour is for school children and involves hands-on activities!</p>
+		   </div><br><br>
+		   <div class="1hr" style="display:block; border:3px; border-style:solid; border-color:rgba(0,152,136,.6); padding: 1em; background-color:white;
+		   height:30vh; width:70vw; margin:0 auto">
+			<p>
+				<h2 style="font-size:15px; color:rgba(0,152,136,1);">1 Hour Campus Tour</h2>
+				This tour takes you around the campus and shows you all the sustainability projects that UT has!
+			</p>
+		   </div><br><br>
+		   <div class="Selftour" style="display:block; border:3px; border-style:solid; border-color:rgba(0,152,136,.6); padding: 1em; background-color:white; 		   height:30vh; width:70vw; margin:0 auto">
+			<p>
+				<h2 style="font-size:15px; color:rgba(0,152,136,1);">Self-guided Tour</h2>
+				This tour is self-guided, allowing you to take time to bask in all the sustainability projects on campus! Stop and go at your leisure.
+			</p>
+		   </div><br><br>	   
+		</div>
+		<br>
+		<div class = "signups" style="text-align: center;">
+			<h2 style="font-size:30px; color:white;">Sign Up For a Tour Today!</h2>
+				<div class="container">
+
+					<ul class="tabs" style="color: white;">
+						<li class="tab-link current" data-tab="tab-1">K-12</li>
+						<li class="tab-link" data-tab="tab-2">1 Hour</li>
+						<li class="tab-link" data-tab="tab-3">Self-Guided</li>
+					</ul>
+
+					<div id="tab-1" class="tab-content current">
+						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+							<div class="row">
+								<label for="name">Your name:</label><br />
+								<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+							</div>
+							<div class="row">
+								<label for="email">Your email:</label><br />
+								<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							</div>
+							<div class="row">
+								<label for="message">Your message:</label><br />
+								<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+							</div>
+							<input id="submit_button" type="submit" value="Send email" />
+						</form>						
+					</div>
+					<div id="tab-2" class="tab-content">
+						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+							<div class="row">
+								<label for="name">Your name:</label><br />
+								<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+							</div>
+							<div class="row">
+								<label for="email">Your email:</label><br />
+								<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							</div>
+							<div class="row">
+								<label for="message">Your message:</label><br />
+								<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+							</div>
+							<input id="submit_button" type="submit" value="Send email" />
+						</form>						
+					</div>
+					<div id="tab-3" class="tab-content">
+						<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+							<div class="row">
+								<label for="name">Your name:</label><br />
+								<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+							</div>
+							<div class="row">
+								<label for="email">Your email:</label><br />
+								<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+							</div>
+							<div class="row">
+								<label for="message">Your message:</label><br />
+								<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+							</div>
+							<input style='padding: 1vw;' id="submit_button" type="submit" value="Send email" />
+						</form>						
+					</div><br><br>
+				</div><!-- container -->
+
+<!-- Footer -->
+		<div class='tail'>
+			<!-- Social Media Links -->
+			<div id='social_media'>
+				
+				<div id='medialinks'>
+
+					<span class='rightFoot'>
+						<span class='vertAlign hiddenClass'>Stay Connected</span>
+						<br class='hiddenClass'>
+						<br class='hiddenClass'>
+
+						<span class='iconImages' style='padding: 0;'>
+							<!-- Social Media -->
+							<a href="https://www.facebook.com/sUsTainabilityToursAtUT/?fref=ts">
+							<img src="images/FB_Icon.png" width="42" height="42" border="0"></a>
+
+							<a href="https://twitter.com/UTAustinGreen">
+							<img src="images/TWT_Icon.png" width="42" height="42" border="0"></a>
+
+							<a href="https://www.instagram.com/utaustingreen/">
+							<img src="images/INS_Icon.png" width="42" height="42" border="0"></a>
+						</span>
+						<br class='desktopClass'>
+						<br class='desktopClass'>
+						<span class='vertAlign desktopClass'>Stay Connected</span>
+					</span>
+
+					<!-- Copyright -->
+					<br class='hiddenClass'>
+					<br class='hiddenClass'>					
+					<span class='leftFoot'>
+						<div style='vertical-align: bottom;'>
+							&#169; Copyright 2016 Texas Green Tours
+							<br>
+							All Rights Reserved
+						</div>
+					</span>
+
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<style>
+			.container{
+			width: 60vw;
+			margin: 0 auto;
+			border:3px; 
+			border-style:solid; 
+			border-color:rgba(0,152,136,.7); 
+			padding: 1em;
+			background: rgba(0,152,136,1);
+		}
+
+
+
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			color: white;
+		}
+		ul.tabs li{
+			background: none;
+			color: white;
+			display: inline-block;
+			padding: .4vw 3vw;
+			cursor: pointer;
+		}
+		ul.tabs li:hover {
+			opacity: .6;
+		}
+
+		ul.tabs li.current{
+			background: #CC7700;
+			color: white;
+		}
+
+		.tab-content{
+			display: none;
+			background: #CC7700;
+			padding: 15px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+		
+		</style>
+		
+		<script>
+			$(document).ready(function(){
+	
+				$('ul.tabs li').click(function(){
+					var tab_id = $(this).attr('data-tab');
+
+					$('ul.tabs li').removeClass('current');
+					$('.tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				})
+
+			})
+		</script>
+</body>
