@@ -18,22 +18,23 @@
     <script src="js/activity.js"></script>
 </head>
 <body>
+
+<!-- Navigation -->
+<div id='wrap'>
+    <!-- Change this when 'Maps' tab is done -->
+    <ul class='res_nav' style="top:0;">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href='signups.html'>Sign-Ups</a></li>
+
+        <!-- Opens alternate navigation on smaller/mobile screens. See the JS -->
+        <li class="icon"><a href="javascript:void(0);" onclick="showNav()">&#9776;</a></li>
+    </ul>
+</div>
+
     <!-- Main Body -->
     <div class="contactsContainer">
-
-        <!-- Navigation -->
-        <div id='wrap'>
-            <!-- Change this when 'Maps' tab is done -->
-            <ul class='res_nav' style="top:0;">
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='about.html'>About</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href='signups.html'>Sign-Ups</a></li>
-
-                <!-- Opens alternate navigation on smaller/mobile screens. See the JS -->
-                <li class="icon"><a href="javascript:void(0);" onclick="showNav()">&#9776;</a></li>
-            </ul>
-        </div>
 
         <!-- Contacts content -->
         <div class="contactsBody">
@@ -99,44 +100,48 @@
             </div>
 
         </div>
+    </div>
 
-        <!-- Footer -->
-        <div class='tail'>
-            <!-- Social Media Links -->
-            <div id='social_media'>
-                <div id='medialinks'>
-					<span class='rightFoot'>
-						<span class='vertAlign hiddenClass'>Stay Connected</span>
-						<br class='hiddenClass'>
-						<br class='hiddenClass'>
-						<span class='iconImages' style='padding: 0;'>
-							<!-- Social Media -->
-							<a href="https://www.facebook.com/sUsTainabilityToursAtUT/?fref=ts">
-                                <img src="images/FB_Icon.png" width="42" height="42" border="0"></a>
-							<a href="https://twitter.com/UTAustinGreen">
-                                <img src="images/TWT_Icon.png" width="42" height="42" border="0"></a>
-							<a href="https://www.instagram.com/utaustingreen/">
-                                <img src="images/INS_Icon.png" width="42" height="42" border="0"></a>
-						</span>
-						<br class='desktopClass'>
-						<br class='desktopClass'>
-						<span class='vertAlign desktopClass'>Stay Connected</span>
-					</span>
+    <!-- Footer -->
+    <!-- Footer -->
+    <div class='tail'>
+        <!-- Social Media Links -->
+        <div id='social_media'>
+            <div id='medialinks'>
 
-                    <!-- Copyright -->
+                <span class='rightFoot'>
+                    <span class='vertAlign hiddenClass'>Stay Connected</span>
                     <br class='hiddenClass'>
                     <br class='hiddenClass'>
-					<span class='leftFoot'>
-						<div style='vertical-align: bottom;'>
-                            &#169; Copyright 2016 Texas Green Tours
-                            <br>
-                            All Rights Reserved
-                        </div>
-					</span>
-                </div>
+                    <span class='iconImages' style='padding: 0;'>
+                        <!-- Social Media -->
+                        <a href="https://www.facebook.com/sUsTainabilityToursAtUT/?fref=ts">
+                            <img src="images/FB_Icon.png" width="42" height="42" border="0"></a>
+                        <a href="https://twitter.com/UTAustinGreen">
+                            <img src="images/TWT_Icon.png" width="42" height="42" border="0"></a>
+                        <a href="https://www.instagram.com/utaustingreen/">
+                            <img src="images/INS_Icon.png" width="42" height="42" border="0"></a>
+                    </span>
+                            <br class='desktopClass'>
+                            <br class='desktopClass'>
+                            <span class='vertAlign desktopClass'>Stay Connected</span>
+                        </span>
+
+                <!-- Copyright -->
+                <br class='hiddenClass'>
+                <br class='hiddenClass'>
+                        <span class='leftFoot'>
+                            <div style='vertical-align: bottom;'>
+                                &#169; Copyright 2016 Texas Green Tours
+                                <br>
+                                All Rights Reserved
+                            </div>
+                        </span>
+
             </div>
         </div>
     </div>
+</div>
 
 </body>
 </html>
