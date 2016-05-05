@@ -151,8 +151,8 @@ ul.res_nav li.icon {display: none;}
 
 /* Remove Pipe Spacing */
 h1 {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -170,7 +170,11 @@ img {
   color: white;
   font-size: 2vw;
   
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 1, 1) ), url("../images/BG_A.jpg") no-repeat center center fixed;
+  background:
+          linear-gradient(rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 1, 1) ),
+          url("../images/BG_A.JPG")
+          no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -260,14 +264,13 @@ img {
   filter: grayscale(60%);
   -webkit-filter: grayscale(60%);
   -moz-filter: grayscale(60%);
-  -ms-filter: grayscale(60%);
   -o-filter: grayscale(60%);
 }
 
 #paragraph1{
   color: rgba(0,152,136,.7);
   font-family: Quicksand, Open Sans, Helvetica, sans-serif;
-  font-weight: thin;
+  font-weight: lighter;
 }
 
 #paragraph1 .tail img {
@@ -407,7 +410,6 @@ img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
 }
 
@@ -521,4 +523,37 @@ img {
   .aboutTitle {
     font-size: 3vw;
   }
+}
+
+/* Contacts Page */
+.contactsContainer {
+  width: 100%;
+  background-color: rgba(0,152,136,.7);
+}
+
+.contactsBody {
+  margin: auto;
+  max-width: 80%;
+  margin-top: 10vw;
+  padding: 3vw;
+  color: #f0f4ff;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+body > div > div.contactsBody > div.contactsColumns {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+/* Role */
+.person {
+  font-weight: lighter;
+  padding: 1vw;
+  font-size: 1.6vw;
+}
+
+body > div.contactsContainer > div.contactsBody > div.contactsColumns > div.person > span {
+  font-style: italic;
 }
