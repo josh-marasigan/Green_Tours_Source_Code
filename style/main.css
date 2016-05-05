@@ -286,7 +286,6 @@ img {
   background-color: rgba(0,152,136,.7);
   -webkit-transition: .2s;
   -moz-transition: .2s;
-  -ms-transition: .2s;
   -o-transition: .2s
 }
 
@@ -342,37 +341,36 @@ img {
 
 /* Video wrapper */
 .video {
-  /* Split background */
-  background: linear-gradient(
-  to bottom, 
-  #076F64 0%, 
-  #076F64 60%, 
-  #FFFFFF 40%, 
-  #FFFFFF 100%);
+  background:
+          linear-gradient(rgba(0,152,136,.6),
+          rgb(255, 255, 255)),
+          url("../images/BG_C.jpg")
+          no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   /* Center */
   position: relative;
   width: auto;
 
-  /* Fill Browser */
-  min-height: 100vh;
-
   /* Title text color */
   color: #CC7700;
-  padding-top: 2.5vw;
+  padding: 5vw 0;
 
   text-align: center;
 }
 
 .photobooth {
   min-height: 100vh;
+  text-align: center;
 }
 
 .vidTitle {
   font-size: 2.5vw;
   font-weight: 200;
-  text-align: left;
-  padding-left: 1vw;
+  text-align: center;
 }
 
 /* Content class for videoWrapper */
@@ -523,6 +521,15 @@ img {
   .aboutTitle {
     font-size: 3vw;
   }
+}
+
+.testimony {
+  display:inline-block;
+  padding: 1em;
+  font-size: 1.5vw;
+  background-color:white;
+  height:15vh;
+  width:50vw;
 }
 
 /* Contacts Page */
